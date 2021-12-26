@@ -7,6 +7,6 @@
 Console.Clear();
 Console.WriteLine("Вычисления значения функции y = f(a)");
 Console.Write("Введите аргумент функции: ");
-string argumentString = Console.ReadLine();
+string argumentString = Console.ReadLine() ?? "";
 int argumentInt = int.Parse(argumentString);
 Console.WriteLine(Function(argumentInt));

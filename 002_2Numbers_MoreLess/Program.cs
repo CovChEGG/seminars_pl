@@ -1,8 +1,8 @@
 ﻿Console.WriteLine("Введите первое число =>");
-string valueString1 = Console.ReadLine();
+string valueString1 = Console.ReadLine() ?? "";
 int valueInt1 = int.Parse(valueString1);
 Console.WriteLine("Введите второе число =>");
-string valueString2 = Console.ReadLine();
+string valueString2 = Console.ReadLine() ?? "";
 int valueInt2 = int.Parse(valueString2);
 if (valueInt1 > valueInt2)
 {

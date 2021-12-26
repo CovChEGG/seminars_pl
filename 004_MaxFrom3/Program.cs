@@ -4,7 +4,7 @@ for (int i = 0; i < Array.Length; i++)
     Console.Write("Input number ");
     Console.Write(i + 1);
     Console.Write(": ");
-    string valueString = Console.ReadLine();
+    string valueString = Console.ReadLine() ?? "";
     int valueInt = int.Parse(valueString);
     Array[i] = valueInt;
 }

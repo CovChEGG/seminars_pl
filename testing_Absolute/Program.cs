@@ -4,7 +4,7 @@ Console.WriteLine($"Модуль числа = {Absolute(value)}");
 int ReadIntFromConsole(string prompt)
 {
     Console.WriteLine(prompt);
-    string answer = Console.ReadLine();
+    string answer = Console.ReadLine() ?? "";
     return Convert.ToInt32(answer);
 }
 

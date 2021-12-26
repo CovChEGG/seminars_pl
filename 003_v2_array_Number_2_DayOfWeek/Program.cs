@@ -1,5 +1,5 @@
 ﻿Console.WriteLine("Input a number of the day of the week =>");
-string valueString = Console.ReadLine();
+string valueString = Console.ReadLine() ?? "";
 int valueInt = int.Parse(valueString);
 string[] NameOfDays = { "Monday", "Tuesday", "Wednesday", "Thusday", "Friday", "Saturday", "Sunday" };
 if ((0 < valueInt) & (valueInt < 8))
