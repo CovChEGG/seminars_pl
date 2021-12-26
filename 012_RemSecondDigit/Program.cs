@@ -1,17 +1,19 @@
-﻿Console.WriteLine("Input 3-digit number: ");
+﻿// Удалить вторую цифру трёхзначного числа
+
+Console.WriteLine("Input 3-digit number: ");
 
 try
 {
     int value = int.Parse(Console.ReadLine() ?? "");
-    if ((value >=100) && (value < 1000))
+    if ((value >= 100) && (value < 1000))
     {
         int temp = value % 10;
-        int temp1 = value/ 100 * 10;
-        Console.Write(temp1+temp);
+        int temp1 = value / 100 * 10;
+        Console.Write(temp1 + temp);
     }
     else
     {
-        throw new FormatException ();
+        throw new FormatException();
     }
 }
 catch (FormatException)

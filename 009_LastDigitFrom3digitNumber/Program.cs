@@ -1,9 +1,10 @@
-﻿Console.Write("Input 3-digit number: ");
+﻿//Показать последнюю цифру трёхзначного числа
+
+Console.Write("Input 3-digit number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Input number of digit: ");
 int digit = Convert.ToInt32(Console.ReadLine());
 
-// 
 for (int i = 1; i < digit; i++)
 {
     number = number / 10;

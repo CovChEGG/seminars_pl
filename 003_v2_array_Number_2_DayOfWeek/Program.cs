@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Input a number of the day of the week =>");
+﻿//По заданному номеру дня недели вывести его название (МАССИВ)
+
+Console.WriteLine("Input a number of the day of the week =>");
 string valueString = Console.ReadLine() ?? "";
 int valueInt = int.Parse(valueString);
 string[] NameOfDays = { "Monday", "Tuesday", "Wednesday", "Thusday", "Friday", "Saturday", "Sunday" };

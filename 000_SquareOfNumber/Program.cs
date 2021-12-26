@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Input Number =>");
+﻿// Вывести квадрат числа
+
+Console.WriteLine("Input Number =>");
 string? valueString = Console.ReadLine() ?? "";
 double valueDouble = double.Parse(valueString);
 Console.Write ("Square of Number ");

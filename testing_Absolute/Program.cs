@@ -20,3 +20,4 @@ int Absolute(int argument)
         return -argument;
     }
 }
+System.Console.WriteLine();

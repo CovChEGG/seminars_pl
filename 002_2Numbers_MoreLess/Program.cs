@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите первое число =>");
+﻿// Даны два числа. Показать большее и меньшее число
+
+Console.WriteLine("Введите первое число =>");
 string valueString1 = Console.ReadLine() ?? "";
 int valueInt1 = int.Parse(valueString1);
 Console.WriteLine("Введите второе число =>");

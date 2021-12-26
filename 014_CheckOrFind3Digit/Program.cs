@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите любое целое число: ");
+﻿// Найти третью цифру числа или сообщить, что её нет
+
+Console.WriteLine("Введите любое целое число: ");
 string StringNumber = Console.ReadLine() ?? "";
 int Length = 0;
 try

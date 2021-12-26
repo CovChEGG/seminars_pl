@@ -1,4 +1,6 @@
-﻿int[] Array = new int[3];
+﻿// Найти максимальное из трех чисел
+
+int[] Array = new int[3];
 for (int i = 0; i < Array.Length; i++)
 {
     Console.Write("Input number ");

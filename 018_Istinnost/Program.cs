@@ -1,4 +1,5 @@
 ﻿// Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
+
 bool[] value1 = { false, true };
 bool[] value2 = { false, true };
 

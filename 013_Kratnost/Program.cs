@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите число:");
+﻿//Выяснить, кратно ли число заданному, если нет, вывести остаток.
+
+Console.WriteLine("Введите число:");
 string stringNumber1 = Console.ReadLine() ?? "";
 int Number1;
 if (!int.TryParse(stringNumber1, out Number1))

@@ -1,4 +1,6 @@
-﻿int Function(int x)
+﻿// Написать программу вычисления значения функции y = f(a)
+
+int Function(int x)
 {
     int y = x * x + 3;
     return y;

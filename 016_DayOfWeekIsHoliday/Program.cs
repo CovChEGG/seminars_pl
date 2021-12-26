@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Input day of the Week: ");
+﻿//Дано число обозначающее день недели. Выяснить является номер дня недели выходным
+
+Console.WriteLine("Input day of the Week: ");
 int day = Convert.ToInt32(Console.ReadLine());
 
 if ((day > 0) && (day < 8))

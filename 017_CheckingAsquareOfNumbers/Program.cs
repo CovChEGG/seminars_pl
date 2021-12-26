@@ -1,4 +1,6 @@
-﻿Console.Clear();
+﻿// По двум заданным числам проверять является ли одно квадратом другого
+
+Console.Clear();
 int ReadInt(string msg)
 {
     Console.Write(msg);

@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите квадрат числа =>");
+﻿// По двум заданным числам проверять является ли первое квадратом второго
+
+Console.WriteLine("Введите квадрат числа =>");
 string valueString1 = Console.ReadLine() ?? "";
 int valueInt1 = int.Parse(valueString1);
 Console.WriteLine("Введите само число =>");

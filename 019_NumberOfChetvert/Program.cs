@@ -18,5 +18,5 @@ if( (Y > 0) && (X > 0)) Console.WriteLine("Первая четверть");
 else if( (Y > 0) && (X < 0)) Console.WriteLine("Вторая четверть");
 else if( (Y < 0) && (X < 0)) Console.WriteLine("Третья четверть");
 else if( (Y < 0) && (X > 0)) Console.WriteLine("Четвертая четверть");
-else Console.WriteLine("Точка находится как минимум на одной из осей");
+else Console.WriteLine("Точка находится как минимум на одной из осей!!!");
 
