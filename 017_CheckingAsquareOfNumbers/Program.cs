@@ -5,7 +5,7 @@ int ReadInt(string msg)
 {
     Console.Write(msg);
     string? valueString = Console.ReadLine();
-    int valueInt = int.Parse(valueString);
+    int valueInt = Convert.ToInt32(valueString);
     return valueInt;
 }
 

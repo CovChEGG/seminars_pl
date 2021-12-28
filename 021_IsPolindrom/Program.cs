@@ -8,7 +8,7 @@ int ReadInt(string msg)
     int valueInt = 0;
     try
     {
-        valueInt = int.Parse(valueString);
+        valueInt = Convert.ToInt32(valueString);
         if (!((valueInt > 9999) && (valueInt < 100000))) throw new Exception();
     }
     catch (System.Exception)
@@ -38,3 +38,4 @@ else
 {
     Console.WriteLine("Is'nt Polindrome");
 }
+// Модифицировать то выявления полиндрома из любого числа.
