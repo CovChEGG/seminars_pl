@@ -2,15 +2,15 @@
 
 Console.WriteLine("Введите любое целое число: ");
 string StringNumber = Console.ReadLine() ?? "";
-int Length = 0;
+// int Length = 0;
 try
 {
-    Convert.ToInt32(StringNumber);
+    Convert.ToInt32(StringNumber); // для того чтобы сработал try-catch вызвав остановку
+                                   // при наборе текста
     string Temp = StringNumber ?? "";
-    Length = StringNumber.Length;
-    if (Length > 2)
+    if (Temp.Length > 2)
     {
-        Console.WriteLine("Третья цифра: " + Temp[Length - 3]);
+        Console.WriteLine("Третья цифра: " + Temp[Temp.Length - 3]);
     }
     else
     {
