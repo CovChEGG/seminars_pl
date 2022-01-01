@@ -82,3 +82,4 @@ for (int i = 0; i < Array.Length / 2; i++, j--) //Проверяем перву�
     }
 }
 Console.WriteLine(dt - DateTime.Now);
+// hey hey
