@@ -10,3 +10,7 @@ Console.WriteLine($"Растояение в плоскости XY: {xy}");
 Console.WriteLine($"Растояение в плоскости XZ: {xz}");
 Console.WriteLine($"Растояение в плоскости YZ: {yz}");
 Console.WriteLine($"Расстояние в пространстве XYZ: {xyz}");
+
+
+// округление
+//Math.Round(число, кол-во знаков)
