@@ -26,15 +26,15 @@
 
 // int n = 50;
 Console.WriteLine();
-int N = 100000;
+int N = 50;
 int a = Convert.ToInt32(N / 2);
 int b = Convert.ToInt32(N / 2);
-int n = 1, i, j;
+int n = 1, i = 1, j;
 Int64[,] ar = new Int64[a, b];
 ar[0, 0] = n;
 for (n = 2; n <= N; n++)
 {
-    i = 1; j = 0;
+    j = 0;
     while (true)
     {
         if (ar[i, j] == 0)
@@ -80,3 +80,12 @@ while (true)
     if (ar[i, j] == 0) break;
 }
 Console.WriteLine(M);
+
+// int GroupsNum(int n)
+// {
+//     int i = 0;
+//     while (Math.Pow(2, i) <= n) i++;
+//     return i;
+// }
+// int GroupsNumber = GroupsNum(N);
+// Console.Write(GroupsNumber);
