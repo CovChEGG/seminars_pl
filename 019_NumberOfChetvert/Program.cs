@@ -9,14 +9,14 @@ int ReadInt(string msg)
     return valueInt;
 }
 
-int X = ReadInt("Input x: ");
-int Y = ReadInt("Input y: ");
+int x = ReadInt("Input x: ");
+int y = ReadInt("Input y: ");
 
 
 
-if( (Y > 0) && (X > 0)) Console.WriteLine("Первая четверть");
-else if( (Y > 0) && (X < 0)) Console.WriteLine("Вторая четверть");
-else if( (Y < 0) && (X < 0)) Console.WriteLine("Третья четверть");
-else if( (Y < 0) && (X > 0)) Console.WriteLine("Четвертая четверть");
+if( (y > 0) && (x > 0)) Console.WriteLine("Первая четверть");
+else if( (y > 0) && (x < 0)) Console.WriteLine("Вторая четверть");
+else if( (y < 0) && (x < 0)) Console.WriteLine("Третья четверть");
+else if( (y < 0) && (x > 0)) Console.WriteLine("Четвертая четверть");
 else Console.WriteLine("Точка находится как минимум на одной из осей!!!");
 

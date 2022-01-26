@@ -29,7 +29,7 @@ bool IsPoly(int valueInt) // Функция проверки на палиндр
     string valueString = valueInt.ToString();
     for (int i = 0; i < 2; i++)
     {
-        if (valueString[i] == valueString[4 - i]) continue;
+        if (valueString[i] == valueString[valueString.Length - 1 - i]) continue;
         return false;
     }
     return true;

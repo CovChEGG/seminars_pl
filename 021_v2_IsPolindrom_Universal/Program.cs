@@ -10,7 +10,7 @@ int ReadInt(string msg) // Выводит сообщение переданно�
         string? valueString = Console.ReadLine();
         dt = DateTime.Now;
         if (valueString != "-0")
-            if (int.TryParse(valueString, out valueInt)) break;      //Проверка на число и отправка значения в valueInt
+            if (int.TryParse(valueString, out valueInt)) break;  //Проверка на число и отправка значения в valueInt
         Console.WriteLine("Incorrect input, try again...");
     }
     return valueInt;

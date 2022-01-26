@@ -10,7 +10,7 @@ if (!int.TryParse(stringNumber1, out Number1))
 }
 
 Console.WriteLine("Введите число для проверки кратности:");
-string stringNumber2 = Console.ReadLine() ?? "";
+string stringNumber2 = Console.ReadLine() ?? string.Empty;
 if (!int.TryParse(stringNumber2, out int Number2))
 {
     Console.WriteLine("Неправильный ввод вторго числа!!!");
