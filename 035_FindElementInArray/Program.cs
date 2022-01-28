@@ -7,6 +7,7 @@ void FillAndPrintArray(int[] array, int Min, int Max)
         array[i] = rnd.Next(Min, Max + 1);
         Console.Write($"{array[i]} ");
     }
+    Console.WriteLine();
 }
 int ReadIntCH(string msg) // Выводит сообщение переданное на входе, осуществляет
 {                         // ввод корректного числа (можно и ограничить ввод высотой консоли),
@@ -20,17 +21,16 @@ int ReadIntCH(string msg) // Выводит сообщение переданн�
     }
     return valueInt;
 }
-bool NumberExist(int[] array, int N)
+bool NumberExist(int[] arrayOfNumbers, int numberForSearch)
 {
-    foreach (int item in array)
-        if (N == item) return true;
+    foreach (int item in arrayOfNumbers)
+        if (numberForSearch == item) return true;
     return false;
 
 }
 
-int[] array = new int[10];
-
-FillAndPrintArray(array, 0, 10);
-int answer = ReadIntCH("Input numer for search in array: ");
-string msg=NumberExist(array, answer) ? "Элемент в массиве": "Элемент отсутсвтует";
-if (NumberExist(array, answer)) Console.WriteLine(msg);
+int[] arrayOfNumbers = new int[10];
+FillAndPrintArray(arrayOfNumbers, 0, 10);
+int numberForSearch = ReadIntCH("Input number for search in array: ");
+string msg = NumberExist(arrayOfNumbers, numberForSearch) ? "Элемент в массиве" : "Элемент отсутсвтует";
+Console.WriteLine(msg);
