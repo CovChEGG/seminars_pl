@@ -1,5 +1,21 @@
 ﻿//043 Написать программу преобразования десятичного числа в двоичное
-int[] ToBinary(int arg)
+int ReadStringWithCheck4Int(string msg)
+{                   
+    int valueInt;   
+    while (true)
+    {
+        Console.Write(msg + $": ");
+        string? valueString = Console.ReadLine();
+        if (int.TryParse(valueString, out valueInt))
+        {
+            if(valueInt >= 0) break;
+        }
+        Console.WriteLine("Incorrect input for Dec(int), try again...");
+    }
+    return valueInt;
+}
+
+int[] ToBin(int arg)
 {
     int[] result = new int[16];
     for(int i=0; i< result.Length; i++)
@@ -23,15 +39,5 @@ void PrintBin(int[] array)
     Console.WriteLine();
 }
 
-
-Console.WriteLine("Input positive number");
-string answer = Console.ReadLine() ?? string.Empty;
-int value = int.Parse(answer);
-PrintBin(ToBinary(value));
-
-
-// Console.WriteLine("Введите число: "); 
-// int number = Convert.ToInt32(Console.ReadLine()); 
- 
-// string binary = Convert.ToString(number, 2); // конвертируется в двоичное исчисление
-// Console.WriteLine($"Перевод десятичного числа {number} в двоичное {binary}");
+int value = ReadStringWithCheck4Int("Input positive Dec(int) number");
+PrintBin(ToBin(value));
