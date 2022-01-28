@@ -1,27 +1,29 @@
 ﻿//Определить сколько чисел больше 0 введено с клавиатуры
 
-Console.WriteLine("Введите числа через пробел");
-string str = Console.ReadLine();
+Console.WriteLine("Введите числа через пробел (десятые доли через запятую)");
+string str = Console.ReadLine() ?? string.Empty;
 Console.WriteLine();
-int[] ArrayNum = StringToNumbers(str);
-Console.WriteLine($"Количество чисел больше 0: {PositiveNumbers(ArrayNum)}");
+double[] ArrayNum = StringToNumbers(str);
+Console.WriteLine($"Количество чисел больше 0: {CalcPositiveNumbers(ArrayNum)}");
 
-int[] StringToNumbers(string str)
+
+double[] StringToNumbers(string str)
 {
     string[] tmp = str.Split(" ");
     int len = tmp.Length;
-    int[] res = new int[len];
+    double[] res = new double[len];
     for (int i = 0; i < len; i++)
     {
-        res[i] = Convert.ToInt32(tmp[i]);
+        if (double.TryParse(tmp[i], out res[i])){}
+        else res[i] = 0;
     }
     return res;
 }
 
-int PositiveNumbers(int[] array)
+int CalcPositiveNumbers(double[] array)
 {
     int tmp = 0;
-    foreach (int item in array)
+    foreach (double item in array)
     {
         if (item > 0) tmp++;
     }
