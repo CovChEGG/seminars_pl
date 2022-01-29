@@ -1,4 +1,6 @@
-﻿void PrintArrayInt(int[,] array)
+﻿// 48. Показать двумерный массив размером m×n заполненный целыми числами
+
+void PrintArrayInt(int[,] array)
 {
     for(int i = 0 ; i< array.GetLength(0); i++)
     {
