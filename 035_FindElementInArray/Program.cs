@@ -9,9 +9,9 @@ void FillAndPrintArray(int[] array, int Min, int Max)
     }
     Console.WriteLine();
 }
-int ReadIntCH(string msg) // Выводит сообщение переданное на входе, осуществляет
-{                         // ввод корректного числа (можно и ограничить ввод высотой консоли),
-    int valueInt;         // на выходе выдаёт значение в целых числах.
+int ReadIntCH(string msg)
+{
+    int valueInt;
     while (true)
     {
         Console.Write(msg);
