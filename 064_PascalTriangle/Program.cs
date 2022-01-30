@@ -17,10 +17,10 @@ void CalcLines(int[] line, int n)
 
 void PrintLine(int[] line)
 {
-    string lineString = ($" {line[0]}");
+    string lineString = ($"{line[0]}");
     for (int i = 1; i < line.Length; i++)
     {
-        lineString = lineString + $" {line[i]}";
+        lineString = lineString + $"    {line[i]}";
     }
     int horisontalCenterPosition = (Console.BufferWidth - lineString.Length) / 2;
     int verticalPosition = line.Length;
