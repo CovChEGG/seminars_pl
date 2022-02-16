@@ -16,4 +16,4 @@ int ReadInt(string msg) // Выводит сообщение переданно�
 Console.Clear();
 double sum = ReadInt("For Summary of numbers from 1 to A, input A: ");
 sum = sum * (sum + 1) / 2;
-Console.WriteLine($"Summary is {sum}");
+Console.WriteLine($"Summary is {sum}");                                                      
